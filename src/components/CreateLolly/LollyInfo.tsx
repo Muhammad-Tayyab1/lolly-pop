@@ -17,7 +17,7 @@ const LollyInfo: FC<Props> = ({
   setSubmission,
 }) => {
   return (
-    <div className="info">
+    <div className="infoall">
       <p className="share">Your lolly is freezing. Share it with this link: </p>
       <pre onClick={()=>
                 navigate(`/${lollyPath}`)
