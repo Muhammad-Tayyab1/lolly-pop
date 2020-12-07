@@ -75,7 +75,7 @@ const createLolly = () => {
       />
 
       {submission === true ? (
-        <LollyInfo
+        <LollyInfo 
           recipient={recipient}
           message={message}
           sender={sender}
@@ -92,14 +92,14 @@ const createLolly = () => {
             colorBottom={colorBottom}
             setColorBottom={setColorBottom}
           />
-
+          <div className="formcontent">
           <Details
             setRecipient={setRecipient}
             setMessage={setMessage}
             setSender={setSender}
             setSubmission={setSubmission}
             setLink={setLink}
-          />
+          /></div>
         </>
       )}
     </div>

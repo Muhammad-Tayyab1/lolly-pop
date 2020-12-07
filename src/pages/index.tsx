@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import {navigate } from "gatsby";
 import React from "react";
 import Lolly from "../components/Lolly";
 import "../styles/main.css";
@@ -7,16 +7,16 @@ const Home = () => {
   return (
     <div>
       <div className="lolliesList">
-        <Lolly lollyTop="#fa4234" lollyBottom="#e6194c" lollyMiddle="#00a3a6" />
-        <Lolly lollyTop="#651bde" lollyBottom="#21ed87" lollyMiddle="#00a3a6" />
-        <Lolly lollyTop="#fa4234" lollyBottom="#e6194c" lollyMiddle="#651bde" />
-        <Lolly lollyTop="#4db800" lollyBottom="#f2075d" lollyMiddle="#00a3a6" />
+        <Lolly lollyBottom="#C06C50" lollyTop="#E3A28D" lollyMiddle="#8C0040" />
+        <Lolly lollyBottom="#C24C50" lollyTop="#8B4513" lollyMiddle="#8C0090" />
+        <Lolly lollyBottom="#FF00FF" lollyTop="#A52A2A" lollyMiddle="#ADFF2F" />
         <Lolly lollyTop="#21ed87" lollyBottom="#4067a3" lollyMiddle="#f22307" />
       </div>
-
-      <Link to="/createLolly" className="btn">
-        Make a new lolly to send to a friend
-      </Link>
+<input type="button" className="btn" value="Make a new lolly to send to a friend"
+    onClick={()=>
+    navigate("/createLolly")
+    }
+    ></input>
     </div>
   );
 };

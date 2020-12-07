@@ -31,11 +31,13 @@ header {
 
 h1 {
     font-size: 4.5em;
-    font-family: Yellowtail, cursive;
-    margin-top: 0.5em;
+    font-family: Yellowtail, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 0.2em;
     margin-bottom: .2em;
 }
-
+.title:hover{
+    color: rgb(231, 147, 147);
+}
 .subtitle {
     font-size: 1em;
     font-style: italic;
@@ -61,7 +63,7 @@ a:visited {
     border-bottom: 1px solid #f88cdd;
 }
 
-.lolliesList,
+
 .createLolly {
     display: flex;
     flex-direction: row;
@@ -71,22 +73,22 @@ a:visited {
     margin: auto;
     margin-bottom: 3em;
 }
-
-a.btn,
-input[type=submit] {
-    margin-top: 1em;
-    box-shadow: 0 0 6px #fa73d9;
-    border: 2px solid #fa73d9;
-    background-color: transparent;
-    font-size: .9em;
-    color: #fa73d9;
-    padding: 1em 2em;
-    border-radius: 4em;
-    cursor: pointer;
-    transition: all .3s;
+.formcontent{
+    max-width: 400px;
+    
 }
-
-
+.btn{
+    height: 30px;
+    border-radius: 10px;
+    background-color: rgb(20, 18, 18);
+    color: violet;
+    box-shadow: 0 0 5px violet;
+    border-bottom: none;
+}
+.btn:hover{
+    background-color: blueviolet;
+    
+}
 .createLolly {
     display: flex;
     flex-direction: row;
@@ -126,10 +128,11 @@ input[type=submit] {
     padding: 1em;
     margin-bottom: 1.5em;
     background-color: rgba(0, 0, 0, .2);
-    box-shadow: 0 0 20px rgba(163, 163, 163, 0.6);
+    box-shadow: 0 0 20px rgba(199, 47, 47, 0.6);
     text-align: left;
     font-style: italic;
     font-size: 1.1em;
+    border-radius: 10px;
 }
 
 input[type=text],
@@ -145,11 +148,12 @@ textarea {
 }
 
 .info {
-    margin-left: 4em;
+ 
+    width: 400px;
 }
 
 .error {
-    color: #ff0000;
+    color: #cc3434;
 }
 
 p {
@@ -158,13 +162,17 @@ p {
 }
 
 pre {
+    cursor: pointer;
     color: #fa73d9;
     margin-top: .5em;
     padding: .5em 1em;
     border: 1px solid #000;
     background-color: #000;
+    border-radius: 10px;
 }
-
+.link:hover{
+   color: rgb(219, 30, 30);
+}
 .bytheway {
     font-size: .7em;
     color: hsla(0, 0%, 100%, .6);
@@ -213,4 +221,14 @@ pre {
     .info {
         margin-left: 0;
     }
+}
+.messagea{
+    margin-left: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+.from{
+    margin-left: 100px;
+    align-items: center;
+    font-size: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

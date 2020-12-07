@@ -99,7 +99,7 @@ const resolvers = {
         );
 
         axios
-          .post("https://api.netlify.com/build_hooks/5fc20f9f9ad37b0da2257b3b")
+          .post("https://api.netlify.com/build_hooks/5fcd185226e26cde0a6fe559")
           .then(function (response) {
             console.log(response);
           })

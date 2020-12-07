@@ -44,7 +44,7 @@ const Details: FC<Props> = ({
       setRecipient(values.recipientName);
       setMessage(values.message);
       setSender(values.sendersName);
-      setLink(`lollies/${nanoid(10)}`);
+      setLink(`lolly/${nanoid(10)}`);
 
       setSubmission(true);
     },
@@ -70,12 +70,13 @@ const Details: FC<Props> = ({
             ) : null}
           </p>
           <div className="message">
-            <label htmlFor="message">Say something nice</label>{" "}
+            <label htmlFor="message">Message</label>{" "}
             <textarea
               name="message"
               id="message"
               cols={30}
               rows={10}
+              placeholder="Message:"
               onChange={formik.handleChange}
               onBlur={formik.handleBlur}
               value={formik.values.message}
@@ -100,7 +101,7 @@ const Details: FC<Props> = ({
             ) : null}
           </p>
         </div>
-        <input type="submit" value="Freeze this lolly and get a link"></input>
+        <input type="submit" className="btn" value="Freeze this lolly and get a link"></input>
       </form>
     </div>
   );

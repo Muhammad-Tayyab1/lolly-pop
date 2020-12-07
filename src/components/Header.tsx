@@ -4,8 +4,8 @@ import React from "react";
 const Header = () => {
   return (
     <header>
-      <h1 className="title">
-        <Link to="/">virtual lollipop</Link>
+      <h1 >
+        <Link to="/" className="title">virtual lolliPop</Link>
       </h1>
       <p className="subtitle">
         because we all know someone

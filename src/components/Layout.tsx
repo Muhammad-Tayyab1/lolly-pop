@@ -1,4 +1,3 @@
-import { Link } from "gatsby";
 import React, { FC, ReactNode } from "react";
 import Header from "./Header";
 

@@ -1,4 +1,4 @@
-import { Link } from "gatsby";
+import { Link, navigate } from "gatsby";
 import React from "react";
 import Lolly from "../components/Lolly";
 import "../styles/main.css";
@@ -25,9 +25,8 @@ const Template = ({ pageContext: { data } }) => {
         </div>
         <p className="bytheway">
           {data.sender}
-          made this virtual lollipop for you. You can
-          <Link to="/createLolly">make your own</Link> to send to a friend who
-          deserve some sugary treat which won't rot their teeth...
+         
+          <button onClick={()=>navigate("/createLolly")} value="Create New Lolly"/>
         </p>
       </div>
     </div>
